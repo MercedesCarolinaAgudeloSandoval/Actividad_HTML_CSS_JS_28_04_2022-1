@@ -1,3 +1,45 @@
 :root{
     --i: red;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
 }
+
+
+  body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height:  100vh;
+      background: papayawhip;
+
+  }
+  .navigation {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background: plum;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
+  .navigation.active{
+    width: 200px;
+    height: 200px;
+  }
+  .navigation span{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background: plum;
+    border-radius: 50px;
+    transform: translate(cale(12px * var(--x)),cale(12px * var(==y)));
+  }
+  .navigation.active span{
+    transform: translate(cale(60px * var(--x)),cale(60px * var(==y)));
+
+  }
